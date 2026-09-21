@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #b9436e;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 700px;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.row {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.field {
+    flex: 1;
+}
+
+.full {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    outline: none;
+    font-size: 14px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-bottom: 2px solid #3478db;
+}
+
+textarea {
+    height: 70px;
+    resize: none;
+}
+
+.gender {
+    display: flex;
+    gap: 25px;
+}
+
+.gender label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: normal;
+}
+
+.gender input {
+    width: auto;
+}
+
+button {
+    margin-top: 10px;
+    padding: 12px 45px;
+    border: none;
+    background: #3478db;
+    color: white;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #245fb5;
+}
+
+@media (max-width: 700px) {
+
+    .form-container {
+        width: 90%;
+        padding: 25px;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 25px;
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <h2>Registration Form</h2>
+
+        <form id="registrationForm">
+
+            <div class="row">
+                <div class="field">
+                    <label>First Name</label>
+                    <input type="text" id="firstName">
+                </div>
+
+                <div class="field">
+                    <label>Last Name</label>
+                    <input type="text" id="lastName">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="field">
+                    <label>Birthday</label>
+                    <input type="date" id="birthday">
+                </div>
+
+                <div class="field">
+                    <label>Gender</label>
+
+                    <div class="gender">
+                        <label>
+                            <input type="radio" name="gender" value="Male">
+                            Male
+                        </label>
+
+                        <label>
+                            <input type="radio" name="gender" value="Female">
+                            Female
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="field">
+                    <label>Email</label>
+                    <input type="email" id="email">
+                </div>
+
+                <div class="field">
+                    <label>Phone Number</label>
+                    <input type="tel" id="phone">
+                </div>
+            </div>
+
+            <!-- <div class="field full">
+                <label>Address</label>
+                <textarea id="address"></textarea>
+            </div> -->
+
+            <div class="field full">
+                <label>Subject</label>
+                <select id="course">
+                    <option value="">Choose Option</option>
+                    <option value="Java">English</option>
+                    <option value="Python">Maths</option>
+                    <option value="Web Development">Computer Science</option>
+                    <option value="Data Science">History</option>
+                </select>
+            </div>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
