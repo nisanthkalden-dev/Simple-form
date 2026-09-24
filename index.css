@@ -3,9 +3,12 @@
 }
 
 body {
+
+
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #b9436e;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(39, 40, 39, 0.5)), 
+              url('images/he-junhui-FNFBN4-GdlQ-unsplash.jpg') no-repeat center center/cover;
     min-height: 100vh;
 
     display: flex;
